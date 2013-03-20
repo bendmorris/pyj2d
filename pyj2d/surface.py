@@ -146,6 +146,9 @@ class Surface(BufferedImage):
             except ValueError:
                 x,y = rect[0]
                 w,h = rect[1]
+
+        x, y, w, h = int(x), int(y), int(w), int(h)
+
         try:
             subsurf = self.getSubimage(x, y, w, h)
         except RasterFormatException:
