@@ -117,7 +117,7 @@ class Display(object):
             self._nonimplemented_methods()
             self._initialized = True
 
-    def set_mode(self, size):
+    def set_mode(self, size, flags=None):
         """
         Return a display Surface.
         Argument: size (x,y) of surface.
